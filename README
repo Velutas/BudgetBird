@@ -1,0 +1,11 @@
+A simple app for tracking your budget
+
+First run:
+docker-machine create docker
+
+Run:
+docker-machine env docker
+eval $("C:\Program Files\Docker Toolbox\docker-machine.exe" env docker)
+
+docker build -t buggie ../BudgetBird/
+docker run -p 80:80 buggie "go run main.go"
